@@ -1,0 +1,1020 @@
+
+/*WILDCARD*/ 
+* 
+{
+    box-sizing: border-box;  /*pour le respect de mes pixels*/
+    font-family: "Raleway", "sans-serif;";
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*Body*/
+
+.wrapper
+{
+    padding:  0 40px;
+}
+
+
+/*header*/ 
+nav a 
+{
+    padding: 40px;
+    border-top: 3px solid transparent;
+    margin-right: 30px;
+}
+
+nav a:hover
+{
+    border-top: 3px solid #0065FC;
+}
+
+nav    
+{
+    display: flex; /*mes elements sont passer en hauteur*/
+    align-items: center; /*les elements de mon header sont à present tous a la meme hauteur*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+#logo
+{
+
+    padding:  0 0px;
+    height: 50px;
+    justify-content: flex-start;
+    margin-left: 52px;
+
+}
+
+.hebergementheader
+{
+    color: #0065FC;
+}
+
+.sub_nav
+{
+    display: flex;
+}
+
+.sub_nav a:hover
+{
+    color:#0065FC;
+}
+
+.deflex
+{
+    display: flex;
+}
+
+
+/*fin header*/
+/*search form*/ 
+
+
+.bordure_recherche
+{
+    width: 400px; /*bordure globale des éléments*/
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2; /*comme j'avais supprimer la bordure de l'input
+    , on va rajouter la bordure grise*/
+}
+
+.iconSize /*va nous permettre de donne rune largeur et auteur à la div qui contient l'icone*/
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 14px 0 0 14px;
+    background-color: #f2f2f2;
+}
+.padding_right
+{
+    padding-right: 22px;
+}
+.search 
+{
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+.fond_gris
+{
+    background-color: #f2f2f2;
+}
+
+.fond_bleu
+{
+    background-color: #0065fc;
+}
+
+.fa-info
+{
+    color: #0065fc;
+    padding: 3px 8px 3px 8px;
+}
+
+
+.deletebord /*class qui me permet de supp les bordures de l'input*/
+{
+    border:  none;
+}
+
+.button 
+{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.9;
+    transition: transform  200ms;
+    font-weight: bold;
+}
+
+.button:hover
+{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.centrer_element /*va permettre de centrer tous les éléments au milieu*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_between /*les elements de mon header se sépare en section*/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.flex_around /*m'a permit de faire en sorte que Hébergements et Activités soit côte à côte, les elements sont espacer mais pas de marge alos ils sont tous collé. Solution: crée une l
+largeur à ma div "espace_liens_nav*/
+{
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.paddingrecherche /*espacer le texte de l'inpu, pour pas quil soit coller contre la bordure de l'input*/
+{
+    padding-left: 20px;
+}
+
+.search2
+{
+    display: none;
+}
+
+.margin_top
+{
+    margin-top: 12px;
+}
+
+.marginleft
+{
+    margin-left: 3px;
+}
+/*FIN*/ 
+
+
+
+/***filters*/ 
+
+/*FILTRES*/
+
+.filtre   /*m'a permis d'aligner mes elements sur l'axe verticale*/
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.marge_filtre /*pour espacer mes elements par rapport aux elements du haut et du bas*/
+{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.margeFiltreTitre 
+{
+    margin-right: 20px; /*de facon a espacer le titre des filtres*/ 
+}
+
+.filtretexte /*class qui va concerner le texte*/
+{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0; /*haut gauche haut droite*/
+}
+
+
+
+
+.filtre-icone /*class qi va concerner l'icone et la div qu'il contient*/
+{
+    margin-left: -2px;
+    border-radius: 25px; /*ce qui va permettre d'avoir un cercle*/
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+.FiltreTextIcones
+{
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px; /*va permettre d'espacer chaque div l'une de l'autre*/
+}
+
+.FiltreTextIcones:hover > .filtretexte 
+{
+  color: #0065fc;
+}
+
+
+.FiltreTextIcones:hover > .filtre-icone 
+{
+    color: white;
+    background-color: #0065fc;
+}
+
+
+.info
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.element_ranger
+{
+
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+
+/*hebergement*/ 
+
+.fa-star
+{
+    color: black;
+}
+
+.deux_blocs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.hebergements
+{
+    flex:  2;
+    flex-direction: column;
+    border-radius: 25px;
+    justify-content: space-around;
+    margin-right: 5px;
+    background-color: #f2f2f2;
+
+}
+
+
+
+.tous_hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+.hebergement1, .hebergement2, .hebergement3
+{
+    width: 32%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    
+}
+
+.hebergement4, .hebergement5, .hebergement6
+{
+    width: 32%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hebergement7, .hebergement8, .hebergement9
+{
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    align-items: center;
+
+    
+}
+
+.hebergements /*marge autour du "hebergements à marseille"*/
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img
+{
+    object-fit: cover;
+}
+
+.image
+{
+    width: 100%;
+    height: 125px;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+}
+
+.image_hebergement1
+{
+    width: 100%;
+    height: 120px;
+    background-size: cover; /*permettre de rendre l'image par rapport a la taille de l'element*/
+    background-position: center; /*pour preciser que l'on veut que le centre de l'image soit afficher*/
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.fa-star
+{
+    color: #0065fc;
+}
+
+.grey
+{
+    color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/*populaires*/
+
+.blocPopulaire /*me permet de mettre un padding dans mon bloc*/
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+
+}
+
+.cube_populaire /*mon image ne s'affichait plus alors j'ai creer cette class que j'ai mis pres de centrer_element*/
+{
+    background-color: white;
+    height: 150px;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+
+}
+
+
+
+
+.bloc_populaire12
+{
+    margin-bottom: 22px; /*ce qui va espacer les blocs entre eux*/
+}
+
+.cubedetailspopulaire  /*60% qui seront occuper par la description*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 5%;
+}
+
+.cubedetailspopulaire div
+{
+    margin-top: auto;
+}
+.image_populaire123
+{
+    width: 40%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+
+
+
+
+.taille-populaire
+{
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+
+.fa-star.fa-lg
+{
+    color: black;
+}
+
+.cube_populaire
+
+
+/*Bloc Activités à Marseille*/
+.Activites
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*va me permettre de laisser un espace en haut et en bas de la div*/
+}
+
+.blocActivites
+{
+    width: 100%; /*pour qu'il prenne 100% de son parent-section*/
+
+}
+
+.blocActivites2356
+{
+    width: 23%;
+    height: 600px;
+}
+
+
+/*reglage bloc Activites à Marseille*/
+.cubeActivite
+{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2 ;
+}
+
+.cubeActivite2356
+{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+/*fin*/
+/*suite activites à marseille*/
+
+
+.flex_column_between 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.flex_column_centre 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column_around
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.hauteurTitre
+{
+    height: 70px;
+
+}
+
+.margeActivitesfiltre
+{
+    padding-top: 54px;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+.titreActivite    /*pour centrer mon titre*/
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+    width: 95%; /*pour que j'ai 5% de marge et 95% qui va prendre l'element*/
+}
+
+.flex-column-centre {
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ImageActivite1
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 530px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ImageActivite2
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ImageActivite3
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ImageActivite4
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 530px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ImageActivite5
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ImageActivite6
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /*doit prendre 100% de son parent*/
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+/*Footer*/
+.footer
+{
+    height: 200px;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+}
+
+.tailleBlocfooter /*taille bloc à propos*/
+{
+    height: 150px;
+}
+
+.margeblocfoot1
+{
+    margin-left: 5%;
+}
+
+.margeblocfoot3
+{
+    margin-right: 20%;
+}
+
+.pas_decoration
+{
+  text-decoration: none;
+}
+.lien_foot_color
+{
+    color: black;
+}
+
+.divlienfootespace
+{
+    height: 30px;
+}
+
+.texte-gras 
+{
+  font-weight: 700;
+}
+
+.margetext 
+{
+    margin-right: 0;
+}
+
+.padding_top
+{
+    padding-top: 25px;
+}
+
+.padding-bottom
+{
+    padding-bottom: 60px;
+}
+
+.padding_bottom
+{
+    padding-bottom: 10px;
+}
+
+.starpop_padding
+{
+    padding-top: 23px;
+}
+
+
+.pas_margin  
+{
+    margin-bottom: 0;
+}                                                   
+
+.marginleft
+{
+    margin-left: 10px;
+}
+
+.textnearhebergement
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.margin-bottom 
+{
+    margin-bottom: 3px;
+}
+
+.paddingtop_hebergement 
+{
+    padding-top: 25px;
+}
+
+.paddingbottom_hebergement
+{
+    padding-bottom: 26px;
+}
+
+
+
+/*responsive*/
+@media screen and (max-width: 992px)   /*ordinateur*/ 
+{
+
+    .cubeDetailsHebergements 
+    {
+        min-height: 1000px;
+    }
+    .taille-hebergement 
+    {
+        min-height: auto;
+        padding-left: 20px;
+        margin-top: 0;
+    }
+
+    .cube_populaire
+    {
+        width: auto;
+    }
+
+    .image_populaire123
+    {
+        flex-basis: auto;
+        object-fit: cover;
+    }
+
+    .hebergements
+    {
+        flex-basis: 30px;
+        margin-bottom: 40px;
+    }
+
+    .taille-populaire
+    {
+       min-height: auto;
+       padding-left: 20px;
+       margin: 0;
+   }
+
+   .deux_blocs
+   {
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+.image_populaire123
+{
+    width: 40%;
+}
+
+.tabletteSizeTitrePop
+{
+    margin-top: 0;
+}
+
+.filtre 
+{
+    flex-wrap: wrap;
+}
+
+.FiltreTextIcones
+{
+    margin-bottom: 20px;
+}
+}
+
+
+
+
+@media (max-width:768px)  /*tablette et moins f*/
+{
+    #logo 
+    {
+        margin-left: 40%;
+        margin-top: 30px;
+    }
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav a 
+    {
+        margin-right: 0;
+    }
+
+
+    .wrapper
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .sub_nav
+    {
+
+        flex-basis: 100%;
+    }
+
+    .sub_nav a 
+    {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .sub_nav a:hover
+    {
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
+    }
+    
+    .button
+    {
+        height: 50px;
+        width: 50px;
+        color: white;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        opacity: 0.9;
+        transition: transform 200ms;
+    }
+    
+    .search2
+    {
+        display: inline;
+    }
+
+    .fa-magnifying-glass
+    {
+        font-weight: bold;
+    }
+
+    .search1
+    {
+        display: none;
+    }
+
+    .filtre 
+    {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .margeinfo
+    {
+        margin-bottom: 40px;
+    }
+
+    .deux_blocs
+    {
+
+        flex-direction: column-reverse;
+
+
+    }
+
+    .hebergements, .blocPopulaire
+    {
+        width:100%;
+        margin-top: 50px;
+    }
+
+    .hebergements
+    {
+        border-radius: 0;
+        justify-content: space-around;
+        margin-right: 5px;
+        background-color: white;
+    }
+
+
+    .tous_hebergements, .flex_around
+    {
+        flex-direction: column;
+    }
+
+    .hebergement1, .hebergement2, .hebergement3
+    {
+        width: 100%;
+        margin-top: 16px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px #f2f2f2;
+        padding-top: 0;
+
+    }
+
+    .hebergement4, .hebergement5, .hebergement6
+    {
+        width: 100%;
+        margin-top: 16px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px #f2f2f2;
+    }
+
+    .blocActivites
+    {
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .taille-populaire
+    {
+
+        margin-left: 0px;
+
+    }
+
+    .blocActivites
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cubeActivite
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .blocActivites2356
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .cubeActivite2356
+    {
+        margin-bottom: 50px;
+    }
+
+    .ImageActivite1, .ImageActivite2, .ImageActivite3, .ImageActivite4, .ImageActivite5, .ImageActivite6
+    {
+        height: 200px;
+    }
+
+    .footer 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 20px;
+        background-color: #f2f2f2;
+        padding-left: 28px;
+        padding-top: 27px;
+
+    }
+
+    .margeblocfoot1
+    {
+       margin-bottom: 15px;
+       margin-left: 0;
+   }
+
+   .margeblocfoot1
+   {
+    margin-left: 0;
+}
+
+.filtretexte
+{
+    margin-right: 50px;
+}
+
+.image_populaire123
+{
+    width: 30%;
+}
+
+.margetext
+{
+    margin: 20px;
+}
+
+.info
+{
+    padding-bottom: 0px;
+}
+
+.taille-populaire
+{
+    border-radius: 0;
+    margin-top: 0;
+}
+
+div .filtre, .marge_filtre
+{
+    flex-direction: row;
+}
+
+.footer
+{
+    margin: 0;
+}
+
+.marginbottom_hebergementmobile
+{
+    margin-bottom: 0;
+}
+}
